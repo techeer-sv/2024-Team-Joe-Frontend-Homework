@@ -1,0 +1,17 @@
+{
+  "name": "2024-team-joe-frontend-homework",
+  "version": "1.0.0",
+  "description": "기능 요구 사항 사용자가 입력한 문자열 값에 따라 사칙 연산을 수행할 수 있는 계산기를 구현해야 한다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "type": "module"
+}
