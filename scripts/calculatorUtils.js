@@ -1,28 +1,4 @@
-const userInput = document.getElementById("calculator");
-const button = document.querySelector("button");
-const resultValue = document.getElementById("result");
-
-button.addEventListener("click", () => {
-    const input = userInput.value.trim();
-
-    if (isValidInput(input)) {
-        try {
-            const result = getCalculationResult(input);
-            resultValue.textContent = `계산 결과: ${result}`;
-        } catch (error) {
-            resultValue.textContent = error.message;
-        }
-    } else {
-        resultValue.textContent = "유효하지 않은 수식입니다. 숫자와 사칙연산 기호만 입력하세요.";
-    }
-});
-
-const isValidInput = (input) => {
-    const regex = /^[\d+\-*/.\s]+$/;
-    return regex.test(input);
-};
-
-const getCalculationResult = (input) => {
+export const getCalculationResult = (input) => {
     if (!input) {
         throw new TypeError("입력 값이 없습니다.");
     }
